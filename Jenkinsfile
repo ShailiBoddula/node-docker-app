@@ -32,7 +32,7 @@ pipeline {
         
         stage('Create container') {
             steps {
-                sh 'docker run -d -p 3000:8080 ShailiBoddula/node-docker-app:${BUILD_NUMBER}'
+                sh 'docker run -d -p 3000:8080 node-docker-app:${BUILD_NUMBER}'
             }
         }
 
