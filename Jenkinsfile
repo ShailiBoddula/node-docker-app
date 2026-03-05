@@ -25,11 +25,11 @@ pipeline {
             }
         }
 
-        stage('Push Docker Image') {
-            steps {
-                sh 'docker push ShailiBoddula/node-docker-app:${BUILD_NUMBER}'
-            }
-        }
+        //stage('Push Docker Image') {
+        //    steps {
+        //        sh 'docker push ShailiBoddula/node-docker-app:${BUILD_NUMBER}'
+        //    }
+        //}
         
         stage('Create container') {
             steps {
